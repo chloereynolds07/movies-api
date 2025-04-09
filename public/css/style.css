@@ -1,0 +1,21 @@
+* {box-sizing: border-box;}
+
+/* horror */
+
+#horrorMain {
+    background-color: #000;
+}
+
+.movie-header {
+    background-color: #2d302f;
+    color: #fff;
+}
+
+/* .footer {
+    background-color: #2d302f;
+    padding: 10px 0;
+} */
+
+.card-horror {
+    background-color: black;
+}
