@@ -5,11 +5,12 @@
             <div class="row row-cols-1 row-cols-md-3 row-colds-lg-4 g-4">
                 <% data.forEach(movies => { %>
                     <div class="col">
-                        <div class="card card card-horror">
+                        <div class="card card card-horror ">
                             <div class="card-header">
                                 <div class="card-title text-danger">
-                                    <a href=""></a>
-                                    <%= movies.title %>
+                                    <a href="/<%= path %>/<%= movies.id %>" class="movie-link text-uppercase">
+                                        <%= movies.title %>
+                                    </a>
                                 </div>
                             </div>
                             <img src="<%= movies.posterURL %>" alt="<%= movies.title %>" class="card-img-top" /> 

@@ -6,6 +6,10 @@
     background-color: #000;
 }
 
+#singlePage {
+    background-color: #000;
+}
+
 .movie-header {
     background-color: #2d302f;
     color: #fff;
@@ -18,4 +22,20 @@
 
 .card-horror {
     background-color: black;
+}
+
+.movie-link, .prev, .next {
+    color: rgb(141, 192, 255);
+    font-family: Ovo;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.movie-link:hover {
+    color: rgb(9, 106, 141);
+    transition-duration: 0.3s;
+}
+
+.prev, .next {
+    background-color: #000;
 }

@@ -20,6 +20,10 @@ router.get('/', (req, res)=> {
 const hrRoutes = require('./api/hrRoutes')
 router.use('/horror-movies', hrRoutes)
 
+const dmRoutes = require('./api/dmRoutes')
+router.use('/drama-movies', dmRoutes)
 
+const antiRoutes = require('./api/antiRoutes')
+router.use('/animation-movies', antiRoutes)
 
 module.exports = router

@@ -7,7 +7,21 @@
                 <img src="<%= movies.posterURL %>" alt="<%= movies.title %>" class="img-fluid w-60">
             </div>
             <div class="col-3">
-                <p class="">IMDB ID: <%=movies.imdbId %></p>
+                <p class="text-light">IMDB ID: <%=movies.imdbId %></p>
+            </div>
+            <div class="col-5">
+                    <ul class="pagination mt-2">
+                        <% if (movies.id > 1) { %>
+                            <li class="page-item">
+                                <a href="/<%= path %>/<%= movies.id - 1 %>" class="page-link prev">prev</a>
+                            </li>
+                        <% } %>
+                        <% if (movies.id > 1) { %>
+                            <li class="page-item ">
+                                <a href="/<%= path %>/<%= movies.id + 1 %>" class="page-link next">next</a>
+                            </li>
+                        <% } %>
+                    </ul>
             </div>
         </div>
     </div>
